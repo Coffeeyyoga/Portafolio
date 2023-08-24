@@ -1,0 +1,151 @@
+.experiencia_profesional {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1.4rem;
+  }
+  
+  .experiencia_profesional__title {
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: var(--raleway);
+    color: var(--color-black);
+    margin-bottom: 3rem;
+  }
+  
+  .experiencia_profesional__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .experiencia_profesional__cards__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .experiencia_profesional__card__imagen {
+    height: 150px;
+  }
+  
+  .experiencia_profesional__card__imagen img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .experiencia_profesional__content {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .experiencia_profesional__card__title {
+    color: var(--color-black);
+    font-family: var(--raleway);
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  
+  .experiencia_profesional__card__subtitle {
+    color: var(--color-black);
+    font-size: 0.9rem;
+    font-family: var(--raleway);
+    font-weight: 500;
+  }
+  
+  .experiencia_profesional__buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  
+  .experiencia_profesional__button--repo {
+    min-width: 96px;
+    font-family: var(--raleway);
+    font-weight: 600;
+    font-size: 0.9rem;
+    background-color: transparent;
+    color: var(--color-azul-normal);
+    padding: 0.7rem 1rem;
+    border: 2px solid var(--color-azul-normal);
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+  
+  .experiencia_profesional__button--azul {
+    min-width: 96px;
+    color: var(--color-blanco);
+    background-color: var(--color-azul-normal);
+    font-family: var(--raleway);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.7rem 1rem;
+    border: 2px solid var(--color-azul-normal);
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+  
+  .experiencia_profesional__button--repo:hover {
+    color: var(--color-blanco);
+    background-color: var(--color-azul-normal);
+    transform: scale(1.04);
+  }
+  
+  .experiencia_profesional__button--azul:hover {
+    color: var(--color-azul-normal);
+    background-color: transparent;
+    transform: scale(1.04);
+  }
+  
+  @media screen and (min-width: 768px) {
+    .experiencia_profesional__card__imagen {
+      width: 100%;
+      height: 320px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .experiencia_profesional {
+      padding: 2rem;
+    }
+  
+    .experiencia_profesional__title {
+      font-size: 2rem;
+    }
+    .experiencia_profesional__cards__card {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .experiencia_profesional__card__title {
+      font-size: 1.4rem;
+    }
+  
+    .experiencia_profesional__card__subtitle {
+      font-size: 1rem;
+    }
+  
+    .experiencia_profesional__card__imagen {
+      width: 100%;
+      max-width: 700px;
+    }
+  
+    .experiencia_profesional__cards
+      .experiencia_profesional__cards__card:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .experiencia_profesional {
+      padding: 2rem 9.5rem;
+    }
+  
+    .experiencia_profesional__card__imagen {
+      max-width: 752px;
+    }
+  }
