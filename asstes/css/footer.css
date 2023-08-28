@@ -6,8 +6,14 @@
   }
   
   .footer p {
-    font-size: 1rem;
+    font-size: 0.88rem;
     font-family: var(--raleway);
     font-weight: 500;
     color: var(--color-black);
+  }
+
+  @media screen and (min-width: 200px){
+    .footer p{
+      text-align: center;
+    }
   }
